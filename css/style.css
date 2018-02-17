@@ -22,26 +22,110 @@
         font-family: 'Nanum Barun Gothic', sans-serif;
     }
 
-/* Body Layout */
+/* Layout */
     /** container **/
-    html,
-    body {
-        height: 100%;
-    }
+        html,
+        body {
+            height: 100%;
+        }
 
-    div.container {
-        max-width: 600px;
-        width: 100%;
-        height: 100%;
-        margin: 0px auto;
-        padding: 0px;
-        overflow: auto;
-    }
+        div.container {
+            max-width: 600px;
+            width: 100%;
+            height: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            overflow: auto;
+        }
 
-    div.container_hidden {
-        overflow: hidden;
-    }
+        div.container_hidden {
+            overflow: hidden;
+        }
 
-    div.container_scroll {
-        overflow: scroll;
-    }
+        div.container_scroll {
+            overflow: scroll;
+        }
+
+    /** Flexbox **/
+        .flex {
+            display: -webkit-box !important;
+            display: -webkit-flex !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+
+        .inline_flex {
+            display: -webkit-inline-box !important;
+            display: -webkit-inline-flex !important;
+            display: -ms-inline-flexbox !important;
+            display: inline-flex !important;
+        }
+
+        /** Flex Row **/
+        .flex_row {
+            flex-direction: row;
+        }
+
+        /** Flex Column **/
+        .flex_column {
+            flex-direction: column;
+        }
+
+        /** Flex 좌우 정렬 **/
+        .justify_content_start {
+            justify-content: flex-start;
+        }
+
+        .justify_content_end {
+            justify-content: flex-end;
+        }
+
+        .justify_content_center {
+            justify-content: center;
+        }
+
+        .justify_content_between {
+            justify-content: between;
+        }
+
+        .justify_content_around {
+            justify-content: around;
+        }
+
+        /* flex 상하 정렬 */
+        .align_items_start {
+            align-items: flex-start;
+        }
+
+        .align_items_end {
+            align-items: flex-end;
+        }
+
+        .align_items_center {
+            align-items: center;
+        }
+
+        .align_items_baseline {
+            align-items: baseline;
+        }
+
+        .align_items_stretch {
+            align-items: stretch;
+        }
+    
+    /* Text Align */
+        .text_left {
+            text-align: left;
+        }
+
+        .text_right {
+            text-align: right;
+        }
+
+        .text_center {
+            text-align: center;
+        }
+
+        .text_justify {
+            text-align: justify;
+        }
