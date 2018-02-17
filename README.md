@@ -1,10 +1,11 @@
 # Hybrid App Style Guide
 
- Hybrid App 제작을 할 때 Web의 CSS를 쉽게 적용하기 위해 만들어진 프로젝트 입니다. 모바일 페이지에서 보여지는 화면만 고려하며 PC 페이지(`width: 600px`)이상의 경우에는 모바일 화면과 동일하게 `Container`가 적용 됩니다.
+Hybrid App 제작을 할 때 Web의 CSS를 쉽게 적용하기 위해 만들어진 Style Guide 입니다.
+WebApp 또는 HybridApp 환경만 고려하여 Desktop 환경에서도 동일하게 Mobile Layout이 적용 됩니다.
 
+본 Style Guide의 가장 큰 목적은 Web환경에서 최대한 Native와 같이 보이게 하는 것 입니다.
 
-
-
+* 현재 제작하고있는 Web 서비스 UI에 관련된 내용들을 토대로 제작이 되며 Bootstrap이나 Material Style Guide를 적용 시키면 부분적으로 적용이 안되는 부분이 있을 수 있습니다.
 
 ## CSS
 
@@ -66,7 +67,7 @@
 #### 올바른 예시
 
 ```css
-.sampel {
+.sample {
     margin-top: 40px;
     border: 2px solid black;
 }
