@@ -54,7 +54,11 @@ hybrid app을 만들더라도 Base는 Web이며 Web에서도 모바일 환경과
     </div>
 ```
 
-![container_height](./images/container_height.gif)
+![container_height](./images/container_height.gif){: width="300px"}
+
+
+
+
 
 
 
