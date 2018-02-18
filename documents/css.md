@@ -54,8 +54,6 @@ hybrid app을 만들더라도 Base는 Web이며 Web에서도 모바일 환경과
     </div>
 ```
 
-![container_height](./images/container_height.gif)
-
 
 
 ## Header
@@ -103,4 +101,60 @@ Header를 추가하게 되면 header 영역만큼 Layout이 늘어나게 되는�
 ```
 
 
+
+## Footer
+
+화면 하단에 Footer를 고정하고 싶다면 `footer.footer`를 이용하면 된다. 이를 이용해서 하단에 Nav Bar처럼 이용할 수 있다.
+Header와 마찬가지로 메인 영역 (`div.container`)의 Layout이 늘어나기 때문에 Footer를 고정하고 싶다면 반드시 `div.container.footer`를 넣어줘야 한다. 
+
+```html
+<div class="container footer">
+    메인 영역입니다.
+</div>
+<footer class="footer">
+	푸터 영역입니다.
+</footer>
+```
+
+* Header와 Footer를 함께 사용하는 경우
+
+  Header와 Footer를 함께 사용하는 경우 `div.container`에 `.header_footer`를 추가해야 한다. `div.header`와 `div.footer`를 이용하게 되면 둘 중에 하나만 적용이 되기 때문에 메인 영역에 Scroll이 생긴다.
+
+```html
+<header class="header shadow">
+    헤더 영역입니다.
+</header>
+<div class="container header_footer">
+    메인 영역입니다.
+</div>
+<footer class="footer">
+	푸터 영역입니다.
+</footer>
+```
+
+
+
+### Footer Grid
+
+footer 영역에서 Grid를 이용해 영역을 나눌 수 있다.
+
+footer 안에 `div.col_n`의 형식으로 생성하면 된다. `n`에 나누고싶은 Grid의 수를 적고 해당 수만큼 `div.col_n`을 적어 만들어 주면 된다. (최대 5개 생성 가능)
+
+```html
+<!-- Grid를 3개로 나누고 싶은 경우 -->
+<footer class="footer">
+	<div class="col_3"> Grid 3</div>
+    <div class="col_3"> Grid 3</div>
+    <div class="col_3"> Grid 3</div>
+</footer>
+
+<!-- Grid를 5개로 나누고 싶은 경우 -->
+<footer class="footer">
+	<div class="col_5"> Grid 5</div>
+    <div class="col_5"> Grid 5</div>
+    <div class="col_5"> Grid 5</div>
+    <div class="col_5"> Grid 5</div>
+    <div class="col_5"> Grid 5</div>
+</footer>
+```
 
