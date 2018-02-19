@@ -104,11 +104,11 @@
         }
 
         .justify_content_between {
-            justify-content: between;
+            justify-content: space-between;
         }
 
         .justify_content_around {
-            justify-content: around;
+            justify-content: space-around;
         }
 
         /* flex 상하 정렬 */
