@@ -158,3 +158,49 @@ footer 안에 `div.col_n`의 형식으로 생성하면 된다. `n`에 나누고�
 </footer>
 ```
 
+
+
+## Flex
+
+FLex는 엘리먼트들의 크기나 위치를 쉽게 잡을 수 있다.
+
+### 시작
+
+* `.flex` : 단순히 Flex를 이용하고 싶다면 Flex를 이용할 Block에 `.flex`를 추가하면 된다.
+* `.inline_flex ` : Block을 차지하지 않는 상황에서 Flex를 이용하고 싶다면 `.flex`대신 이것을 사용하면 된다. 
+
+주의해야 할 점은 해당 Class 요소 안에 `!important`가 적용 되어있기 때문에 `display:none` 등 기본적인 CSS 접근 법으로는 적용이 안된다. 만약 display를 변경하고 싶다면 `display`에 `!important`를 함께 적어 사용하면 된다.
+
+### 가로 세로 정렬 여부
+
+* `.flex_row` : flex 내 요소들을 가로로 나열하고 싶다면 `flex_row`를 적으면 된다. (기본적으로 flex는 row임)
+* `.flex_column` : flex 내 요소들을 세로로 나열하고 싶다면 이 클래스를 추가하면 된다.
+
+이 요소 외에도 리버스와 같은 기능들도 있지만 본 design guide는 추가되어 있지 않다.
+
+
+
+### 좌우 정렬 (간격)
+
+좌우 정렬 여부를 조절하고 싶다면 아래의 클래스를 추가하면 된다.
+
+* `.justify_content_start` : 왼쪽 정렬
+
+- `.justify_content_end` : 오른쪽 정렬
+- `.justify_content_center` : 가운데 정렬
+- `.justify_content_between` : `margin`없이 균등하게 정렬 (첫 시작점부터 끝 지점에 각각 하나의 요소들이 들어가며 그 중간에 균일한 간격으로 배치된다.)
+- `.justify_content_around` : between과 유사하나 첫 지점과 끝지점에서 시작하는 것이 아니라 자신의 요소 양 옆에 `margin`이 추가된 상태로 배치된다.
+
+위 요소들은 기본적으로 좌우 정렬을 하지만 `.flex_column`이 추가되어있다면 상하 정렬로 적용이 된다.
+
+
+
+### 상하 정렬 (간격)
+
+* `.align_items_start` : 상단 정렬
+* `.align_items_end` : 하단 정렬
+* `.align_items_center` : 가운데 정렬
+* `.align_items_baseline` : 이기능은 사실 활용해본 적이 없어서 잘 모르겠다 (ㅠㅠ)
+* `.align_items_stretch` :  상하에 Margin이 가득차게된다.
+
+위 요소들은 기본적으로 상하 정렬 하지만 `.flex_column`이 추가되어있다면 좌우 정렬로 적용이 된다.
