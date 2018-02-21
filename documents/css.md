@@ -204,3 +204,16 @@ FLex는 엘리먼트들의 크기나 위치를 쉽게 잡을 수 있다.
 * `.align_items_stretch` :  상하에 Margin이 가득차게된다.
 
 위 요소들은 기본적으로 상하 정렬 하지만 `.flex_column`이 추가되어있다면 좌우 정렬로 적용이 된다.
+
+
+
+## Text Aligin
+
+Text Aligin을 이용하면 Block 내에서 좌,우 가운데 정렬 균등 정렬을 할 수 있다. 
+
+* `.text_left` : Block 내에서 왼쪽 정렬
+* `.text_right` : Block 내에서 오른쪽 정렬
+* `.text_center` : Block 내에서 중앙 정렬
+* `.text_justify` : Block 내에서 균등하게 정렬
+
+Text Aligin의 경우 좌우 정렬만 가능하고 상하 조절은 불가능하다. 상하 조절을 하기위해서 여러가지 방법이 있지만 Flex를 추천한다.
